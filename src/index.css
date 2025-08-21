@@ -134,6 +134,7 @@ All colors MUST be HSL.
 @layer components {
   .luxury-gradient {
     background: var(--gradient-luxury);
+    border: none;
   }
   
   .luxury-text-gradient {
@@ -154,5 +155,19 @@ All colors MUST be HSL.
   .glass-effect {
     backdrop-filter: blur(10px);
     background: hsl(var(--background) / 0.8);
+  }
+  
+  /* Button hover animations */
+  .animate-luxury-glow {
+    animation: luxury-glow 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes luxury-glow {
+    from {
+      box-shadow: var(--shadow-luxury);
+    }
+    to {
+      box-shadow: 0 10px 40px -10px hsl(45 65% 75% / 0.4);
+    }
   }
 }
