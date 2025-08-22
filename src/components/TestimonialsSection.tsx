@@ -8,7 +8,7 @@ const TestimonialsSection = () => {
       role: "Arquiteta Renomada",
       content: "A Aldeia Acabamentos é minha parceira de confiança há anos. A curadoria impecável e o atendimento especializado fazem toda a diferença nos meus projetos de alto padrão.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1594736797933-d0e501ba2fe1?w=100&h=100&fit=crop&crop=face"
+      image: "https://images.unsplash.com/photo-1506863530036-1efeddceb993?w=100&h=100&fit=crop&crop=face"
     },
     {
       name: "Carlos Mendes",

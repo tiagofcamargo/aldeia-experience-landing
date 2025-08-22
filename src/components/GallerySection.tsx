@@ -1,49 +1,52 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { X, ArrowLeft, ArrowRight } from "lucide-react";
-import bathroomImg from "@/assets/gallery-bathroom.jpg";
-import kitchenImg from "@/assets/gallery-kitchen.jpg";
-import livingImg from "@/assets/gallery-living.jpg";
+import foto1 from "@/assets/foto1.jpg";
+import foto2 from "@/assets/foto2.jpg";
+import foto3 from "@/assets/foto3.jpg";
+import foto4 from "@/assets/foto4.jpg";
+import foto5 from "@/assets/foto5.jpg";
+import foto6 from "@/assets/foto6.jpg";
 
 const GallerySection = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
   const images = [
     {
-      src: bathroomImg,
-      alt: "Banheiro de luxo com acabamentos premium",
-      title: "Banheiro Premium",
-      description: "Mármores nobres e metais de design premiado"
+      src: foto1,
+      alt: "Fachada de casa contemporânea com revestimento em pedra e linhas retas.",
+      title: "Fachada moderna com acabamento em pedra natural.",
+      description: "Fachada de residência com design minimalista, revestimento em pedra natural e garagem integrada, trazendo sofisticação e elegância ao projeto arquitetônico."
     },
     {
-      src: kitchenImg,
-      alt: "Cozinha moderna com acabamentos sofisticados",
-      title: "Cozinha Gourmet",
-      description: "Elegância funcional em cada detalhe"
+      src: foto2,
+      alt: "Sala de estar ampla com grandes aberturas e vista para área verde.",
+      title: "Sala integrada com acabamento em concreto aparente.",
+      description: "Espaço de convivência integrado com amplo vão livre, acabamento em concreto aparente e móveis de design, que valoriza a iluminação natural e o contato com a natureza."
     },
     {
-      src: livingImg,
-      alt: "Sala de estar com revestimentos exclusivos",
-      title: "Living Sofisticado",
-      description: "Ambientes que inspiram e acolhem"
+      src: foto3,
+      alt: "Cozinha moderna planejada com armários em cinza e madeira.",
+      title: "Cozinha planejada com acabamento em laca cinza.",
+      description: "Cozinha sofisticada com bancadas em pedra, armários planejados em laca cinza e detalhes em madeira, que combinam funcionalidade e estética contemporânea."
     },
     {
-      src: bathroomImg,
-      alt: "Spa residencial de luxo",
-      title: "Spa Residencial",
-      description: "Relaxamento em sua própria casa"
+      src: foto4,
+      alt: "Área gourmet integrada à piscina com acabamentos em concreto.",
+      title: "Área externa com piscina e espaço gourmet.",
+      description: "Área de lazer completa com piscina moderna, deck integrado e espaço gourmet, com revestimentos em concreto que proporcionam estilo e conforto."
     },
     {
-      src: kitchenImg,
-      alt: "Área gourmet externa premium",
-      title: "Área Gourmet",
-      description: "Entretenimento com sofisticação"
+      src: foto5,
+      alt: "Banheiro elegante com mármore e detalhes em madeira.",
+      title: "Banheiro sofisticado em mármore e madeira.",
+      description: "Banheiro com revestimento em mármore, bancada dupla e detalhes em madeira natural, criando um ambiente requintado e funcional."
     },
     {
-      src: livingImg,
-      alt: "Home office com acabamentos exclusivos",
-      title: "Home Office Premium",
-      description: "Produtividade em ambiente inspirador"
+      src: foto6,
+      alt: "Exposição de louças brancas com design moderno e iluminação decorativa.",
+      title: "Linha de louças modernas Solar – Fabiana Queiroga.",
+      description: "Mostruário da coleção Solar, assinado por Fabiana Queiroga, com louças de design contemporâneo, iluminação cenográfica e acabamento sofisticado."
     },
   ];
 

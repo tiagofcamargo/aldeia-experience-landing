@@ -113,17 +113,6 @@ const ContactSection = () => {
                     Agendar Minha Visita Exclusiva
                   </Button>
                   
-                  <Button 
-                    variant="luxuryOutline" 
-                    size="xl"
-                    className="text-white border-white hover:bg-white hover:text-luxury-dark"
-                    asChild
-                  >
-                    <a href="https://wa.me/5562999999999" className="flex items-center">
-                      <MessageCircle className="w-5 h-5 mr-2" />
-                      WhatsApp
-                    </a>
-                  </Button>
                 </div>
               </form>
             </div>

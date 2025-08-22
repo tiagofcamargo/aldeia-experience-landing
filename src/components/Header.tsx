@@ -1,10 +1,14 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, MessageCircle } from "lucide-react";
+import logoLight from "@/assets/logo.png";
+import logoDark from "@/assets/logo-preto.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const useDarkLogo = isScrolled || isMobileMenuOpen;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,7 +20,6 @@ const Header = () => {
 
   const navItems = [
     { name: "Marcas", href: "#marcas" },
-    { name: "Showroom", href: "#showroom" },
     { name: "Inspiração", href: "#inspiracao" },
     { name: "Contato", href: "#contato" },
   ];
@@ -27,16 +30,16 @@ const Header = () => {
         isScrolled ? "glass-effect border-b border-border" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        {/* Logo */}
-        <div className="flex items-center">
-          <h1 className="text-2xl font-serif font-bold luxury-text-gradient">
-            Aldeia
-          </h1>
-          <span className="ml-2 text-sm text-muted-foreground font-light">
-            ACABAMENTOS
-          </span>
-        </div>
+      <div className="container mx-auto px-4 h-20 flex items-center justify-between">
+
+      {/* Logo */}
+      <div className="flex items-center">
+        <img
+          src={useDarkLogo ? logoDark : logoLight}
+          alt="Aldeia Acabamentos"
+          className="h-12 w-auto transition-opacity duration-300"
+        />
+      </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
@@ -44,8 +47,9 @@ const Header = () => {
             <a
               key={item.name}
               href={item.href}
-              className="text-foreground hover:text-primary transition-colors duration-300 font-medium"
-            >
+              className={`transition-colors duration-300 font-medium 
+                ${isScrolled ? "text-black hover:text-primary" : "text-white hover:text-primary"}`}
+    >
               {item.name}
             </a>
           ))}
@@ -56,10 +60,16 @@ const Header = () => {
           <Button 
             variant="luxury" 
             asChild
-            className="gap-2"
+            className={`gap-2 transition-colors duration-300 ${
+              isScrolled ? "text-black" : "text-white"
+            }`}
           >
-            <a href="https://wa.me/5562999999999">
-              <MessageCircle className="w-4 h-4" />
+            <a href="https://api.whatsapp.com/send/?phone=5562992690128&text&type=phone_number&app_absent=0">
+              <MessageCircle 
+                className={`w-4 h-4 ${
+                  isScrolled ? "text-black" : "text-white"
+                }`} 
+              />
               Fale com um Consultor
             </a>
           </Button>

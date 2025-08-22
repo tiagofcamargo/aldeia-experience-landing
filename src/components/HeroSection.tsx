@@ -28,17 +28,19 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-            <Button 
+            <Button
               variant="hero"
+              size="xl"
+              className="px-6 py-4 text-base md:text-lg w-full sm:w-auto"
               onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Agende sua Visita Exclusiva
             </Button>
-            
-            <Button 
-              variant="luxuryOutline" 
+
+            <Button
+              variant="luxuryOutline"
               size="xl"
-              className="text-white border-white hover:bg-white hover:text-luxury-dark"
+              className="px-6 py-4 text-base md:text-lg w-full sm:w-auto border-white text-white hover:bg-white hover:text-luxury-dark"
               onClick={() => document.getElementById('marcas')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Conheça as Marcas
