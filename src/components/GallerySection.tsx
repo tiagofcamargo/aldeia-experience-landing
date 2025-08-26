@@ -13,19 +13,19 @@ const GallerySection = () => {
 
   const images = [
     {
-      src: foto1,
+      src: foto2,
       alt: "Fachada de casa contemporânea com revestimento em pedra e linhas retas.",
       title: "Fachada moderna com acabamento em pedra natural.",
       description: "Fachada de residência com design minimalista, revestimento em pedra natural e garagem integrada, trazendo sofisticação e elegância ao projeto arquitetônico."
     },
     {
-      src: foto2,
+      src: foto3,
       alt: "Sala de estar ampla com grandes aberturas e vista para área verde.",
       title: "Sala integrada com acabamento em concreto aparente.",
       description: "Espaço de convivência integrado com amplo vão livre, acabamento em concreto aparente e móveis de design, que valoriza a iluminação natural e o contato com a natureza."
     },
     {
-      src: foto3,
+      src: foto5,
       alt: "Cozinha moderna planejada com armários em cinza e madeira.",
       title: "Cozinha planejada com acabamento em laca cinza.",
       description: "Cozinha sofisticada com bancadas em pedra, armários planejados em laca cinza e detalhes em madeira, que combinam funcionalidade e estética contemporânea."
@@ -37,13 +37,13 @@ const GallerySection = () => {
       description: "Área de lazer completa com piscina moderna, deck integrado e espaço gourmet, com revestimentos em concreto que proporcionam estilo e conforto."
     },
     {
-      src: foto5,
+      src: foto6,
       alt: "Banheiro elegante com mármore e detalhes em madeira.",
       title: "Banheiro sofisticado em mármore e madeira.",
       description: "Banheiro com revestimento em mármore, bancada dupla e detalhes em madeira natural, criando um ambiente requintado e funcional."
     },
     {
-      src: foto6,
+      src: foto1,
       alt: "Exposição de louças brancas com design moderno e iluminação decorativa.",
       title: "Linha de louças modernas Solar – Fabiana Queiroga.",
       description: "Mostruário da coleção Solar, assinado por Fabiana Queiroga, com louças de design contemporâneo, iluminação cenográfica e acabamento sofisticado."

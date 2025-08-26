@@ -1,73 +1,98 @@
-# Welcome to your Lovable project
+# 🚀 Landing Page - Armazém Acabamentos  
+Desenvolvido pela **Agência Sato7**  
 
-## Project info
+Este projeto é uma landing page institucional desenvolvida para o cliente **Armazém Acabamentos**, utilizando tecnologias modernas de front-end com foco em performance, escalabilidade e boas práticas de desenvolvimento.
 
-**URL**: https://lovable.dev/projects/9a88a205-9b03-4b87-b5a0-4f73c783e1f0
+---
 
-## How can I edit this code?
+## 📂 Estrutura do Projeto  
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/9a88a205-9b03-4b87-b5a0-4f73c783e1f0) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+.
+├── dist/                 # Arquivos gerados após build
+├── public/               # Arquivos estáticos públicos
+├── src/                  # Código fonte da aplicação
+├── index.html            # HTML principal
+├── package.json          # Dependências e scripts
+├── vite.config.ts        # Configuração do Vite
+├── tailwind.config.ts    # Configuração do TailwindCSS
+├── tsconfig.json         # Configuração do TypeScript
+└── README.md             # Documentação do projeto
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🛠️ Stack Utilizada  
 
-**Use GitHub Codespaces**
+- **Framework:** [React 18](https://react.dev/) + [Vite](https://vitejs.dev/)  
+- **Linguagem:** [TypeScript](https://www.typescriptlang.org/)  
+- **Estilização:** [TailwindCSS](https://tailwindcss.com/) + [tailwind-merge](https://github.com/dcastil/tailwind-merge) + [tailwindcss-animate](https://tailwindcss-animate.vercel.app/)  
+- **UI Components:** [shadcn/ui](https://ui.shadcn.com/) com [Radix UI](https://www.radix-ui.com/)  
+- **Ícones:** [Lucide React](https://lucide.dev/)  
+- **Formulários:** [React Hook Form](https://react-hook-form.com/) + [Zod](https://zod.dev/) + [@hookform/resolvers](https://github.com/react-hook-form/resolvers)  
+- **Gerenciamento de dados:** [TanStack React Query](https://tanstack.com/query/latest)  
+- **Gráficos:** [Recharts](https://recharts.org/en-US/)  
+- **Outros recursos:**  
+  - **Date-fns** para manipulação de datas  
+  - **React Floating WhatsApp** para atendimento  
+  - **Embla Carousel** para sliders  
+  - **Sonner** para notificações toast  
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## ⚙️ Scripts Disponíveis  
 
-This project is built with:
+```bash
+# Rodar em modo desenvolvimento
+npm run dev
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+# Build para produção
+npm run build
 
-## How can I deploy this project?
+# Build em modo desenvolvimento
+npm run build:dev
 
-Simply open [Lovable](https://lovable.dev/projects/9a88a205-9b03-4b87-b5a0-4f73c783e1f0) and click on Share -> Publish.
+# Preview do build
+npm run preview
 
-## Can I connect a custom domain to my Lovable project?
+# Linter (ESLint)
+npm run lint
+```
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 📦 Instalação e Uso  
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+1. Clone este repositório:  
+   ```bash
+   git clone https://github.com/sato7/armazem-acabamentos-landing.git
+   ```
+
+2. Instale as dependências:  
+   ```bash
+   npm install
+   ```
+
+3. Execute o servidor de desenvolvimento:  
+   ```bash
+   npm run dev
+   ```
+
+4. Acesse em: [http://localhost:5173](http://localhost:5173)
+
+---
+
+## 🌐 Deploy  
+
+O projeto é buildado com **Vite** e pode ser hospedado facilmente em serviços como:  
+- **Vercel**  
+- **Netlify**  
+- **GitHub Pages**  
+- **Cloudflare Pages**
+
+---
+
+## 👨‍💻 Desenvolvido por  
+
+**Agência Sato7**  
+Site: [https://sato7.com.br](https://sato7.com.br)  
